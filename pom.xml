@@ -9,7 +9,7 @@
 	<description>spring3 jersey integration example</description>
 
 	<properties>
-<!-- 		<spring.version>4.1.0.RELEASE</spring.version> -->
+		<!-- <spring.version>4.1.0.RELEASE</spring.version> -->
 		<spring.version>3.2.8.RELEASE</spring.version>
 		<mysql.connector.version>5.1.21</mysql.connector.version>
 		<jersey.version>2.14</jersey.version>
@@ -107,6 +107,12 @@
 			<version>1.2</version>
 		</dependency>
 
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.2</version>
+		</dependency>
+
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -154,7 +160,6 @@
 				</exclusion>
 			</exclusions> -->
 		</dependency>
-
 
 	</dependencies>
 
