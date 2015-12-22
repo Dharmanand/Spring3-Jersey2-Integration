@@ -11,11 +11,13 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 @Entity
 @Table(name = "Survey")
+@XmlRootElement
 public class Survey {
 
 	@Id
