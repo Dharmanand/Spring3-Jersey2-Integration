@@ -2,6 +2,7 @@ package com.kdsoft.resources;
 
 import java.util.List;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.CookieParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.HeaderParam;
@@ -18,6 +19,8 @@ import com.kdsoft.model.Survey;
 
 @Component
 @Path(value = "/messages")
+@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 public class MessageResource {
 
 	@Autowired
@@ -30,8 +33,14 @@ public class MessageResource {
 	}
 
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/all")
+	@Produces({ MediaType.APPLICATION_JSON })
+	public List<Survey> getAll() {
+		return surveyDao.getAllSurvey();
+	}
+	
+	@GET
+	@Path("/allServey")
 	public List<Survey> getAllSurvey() {
 		return surveyDao.getAllSurvey();
 	}
