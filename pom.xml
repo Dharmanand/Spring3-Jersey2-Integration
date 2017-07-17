@@ -89,7 +89,7 @@
 			<artifactId>spring-security-taglibs</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<!-- Other -->
+		<!-- Other libs -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
